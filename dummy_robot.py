@@ -486,7 +486,7 @@ async def come_home(base, slam_client, home_location_history=home_location_histo
             elif theta > 0:
                 spin_angle = theta
                 await base.spin(velocity=-10, angle=int(spin_angle))
-                
+
 # Main function
 async def main():
     recognizer = sr.Recognizer()
@@ -555,7 +555,7 @@ async def main():
                         currently_following.append(additional_text)
                         status = await follow_object(base, detector, camera)
                         if status == "too_close":
-                            print("Stopping. The {additional_text} stopped moving.")
+                            print(f"Stopping. The {additional_text} stopped moving.")
                             await come_home(base, slam_client, home_location_history)
                             await default_movement(base)
                         else :

@@ -30,11 +30,11 @@ The main challenges addressed by this project include:
 
 5. The robot uses `SLAMClient` to locate and store its home location. The user can ask the robot to update the home location. After any successful fetch or find the robot will always return to its home.
 
-6. Taking inspiration from fetch with dog the follow functionality has been implemented. You can put the intended fetch object infront of the robot and ask if it can identify or not. If identified you can ask the robot to follow the object. 
+6. Taking inspiration from fetching with dogs, the follow functionality has been implemented. You can place the intended fetch object in front of the robot and ask if it can identify it or not. If it is identified, you can then ask the robot to follow the object.
 
-    The robot can not follow an object that it has not detected yet. You can use find command first in that case then ask it to follow.
+    The robot cannot follow an object that it has not detected yet. In that case, you can use the 'find' command first and then instruct it to follow.
 
-    When following if the object is too close the robot stops and waits for the object to move to continue following. If the object doesn't move the dog successfully fetched the object. So, it does a happy turn and return to it's home.
+    While following, if the object gets too close, the robot will stop and wait for the object to move before continuing to follow. If the object doesn't move, it means the dog has successfully fetched the object. In this case, the robot will perform a happy turn and return to its home
 
 
 7. You can ask the robot to find any object from `YOLOv5` classes. The robot roam around and try to find the object. If found the robot will store the positional data where it found the object. 
@@ -46,3 +46,5 @@ The main challenges addressed by this project include:
 9. The robot keeps a history of all the positional data using `pickle` for future references.  
 
 10. The robot can follow and find humans. 
+
+[Video Folder](https://drive.google.com/drive/folders/1Wule_-lNp9XhI2oXdyhy3qJ8oyyUJzAK?usp=sharing)
